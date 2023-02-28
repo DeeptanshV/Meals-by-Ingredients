@@ -1,15 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
+  /* This is just to transition when you change the viewport size. */
+  * {
+    transition: all 0.25s ease-out;
+  }
+  
+/* */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 :root{
-     --tenne-tawny: #0872d6;
+    --tenne-tawny: #0872d6;
     --tenne-tawny-dark: #b54507;
 }
 body{
+    margin:30px;
+    background-color: #219ebc;
     font-weight: 300;
     font-size: 1.05rem;
     line-height: 1.6;
@@ -33,9 +41,11 @@ body{
 
 /*  */
 .container{
+    border-radius: 30px;
     min-height: 100vh;
 }
 .meal-wrapper{
+    border-radius: inherit;
     max-width: 1280px;
     margin: 0 auto;
     padding: 2rem;
